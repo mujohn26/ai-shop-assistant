@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P001",
+    "name": "Classic White T-Shirt",
+    "category": "T-Shirts",
+    "gender": "Unisex",
+    "price": 8000,
+    "currency": "RWF",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["White"],
+    "in_stock": true,
+    "description": "Soft 100% cotton t-shirt with a regular fit. Great for everyday wear."
+  },
+  {
+    "id": "P002",
+    "name": "Slim Fit Denim Jeans",
+    "category": "Trousers",
+    "gender": "Men",
+    "price": 25000,
+    "currency": "RWF",
+    "sizes": ["30", "32", "34", "36"],
+    "colors": ["Blue", "Black"],
+    "in_stock": true,
+    "description": "Stretch denim jeans with a slim fit and five pockets."
+  },
+  {
+    "id": "P003",
+    "name": "Floral Summer Dress",
+    "category": "Dresses",
+    "gender": "Women",
+    "price": 30000,
+    "currency": "RWF",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Yellow", "Blue"],
+    "in_stock": true,
+    "description": "Light, knee-length dress with a floral print. Perfect for warm days."
+  },
+  {
+    "id": "P004",
+    "name": "Kitenge Print Shirt",
+    "category": "Shirts",
+    "gender": "Men",
+    "price": 22000,
+    "currency": "RWF",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Orange", "Green"],
+    "in_stock": true,
+    "description": "Short-sleeve shirt made from colorful African kitenge fabric."
+  },
+  {
+    "id": "P005",
+    "name": "Lightweight Rain Jacket",
+    "category": "Jackets",
+    "gender": "Unisex",
+    "price": 35000,
+    "currency": "RWF",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "Navy"],
+    "in_stock": false,
+    "description": "Water-resistant jacket with a hood. Folds into its own pocket."
+  },
+  {
+    "id": "P006",
+    "name": "High-Waist Trousers",
+    "category": "Trousers",
+    "gender": "Women",
+    "price": 20000,
+    "currency": "RWF",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Beige", "Black"],
+    "in_stock": true,
+    "description": "Elegant wide-leg trousers suitable for office or casual wear."
+  },
+  {
+    "id": "P007",
+    "name": "Hooded Sweatshirt",
+    "category": "Sweaters",
+    "gender": "Unisex",
+    "price": 18000,
+    "currency": "RWF",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Grey", "Black", "Maroon"],
+    "in_stock": true,
+    "description": "Warm fleece hoodie with a front pocket. Ideal for cool evenings."
+  },
+  {
+    "id": "P008",
+    "name": "Leather Sneakers",
+    "category": "Shoes",
+    "gender": "Unisex",
+    "price": 40000,
+    "currency": "RWF",
+    "sizes": ["38", "39", "40", "41", "42", "43"],
+    "colors": ["White"],
+    "in_stock": true,
+    "description": "Minimalist white leather sneakers with a cushioned sole."
+  }
+]
