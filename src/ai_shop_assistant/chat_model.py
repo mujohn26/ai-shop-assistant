@@ -22,11 +22,25 @@ api_key = os.getenv("GROQ_API_KEY")
 groq = OpenAI(api_key=api_key, base_url= groq_base_url )
 
 
+def find_relevant_products(message,products, limit=30):
+	words = [w for w in message.lower().split() if len(w)>2]
+	scored = []
+	for p in products:
+		text = f"{p['name']} {p['brand']} {p['category']} {p['gender']} {' '.join(p['colors'])} {p['material']}".lower()
+		score = sum(w in text for w in words)
+		if score:
+				scored.append((score, p))
+	scored.sort(key=lambda x: x[0], reverse=True)
+	return [p for _, p in scored[:limit]]
+
+
+
+
 def chat(message, history):
 	history = [{"role": h['role'], "content": h['content']} for h in history]
 	relevant_message = (
 		f"{system_prompts}\n\n"
-		f" Here is the store products in json {json.dumps(products, indent=2)}\n\n"
+		f" Here is the store products in json {json.dumps(find_relevant_products(message,products), indent=2)}\n\n"
 		)
 	if "belt" in message.lower():
 		relevant_message += "The store does not sell belts; if you are asked for belts be sure to point out other items on sale"
